@@ -1,0 +1,13 @@
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\bin\Debug\Lab6_1.exe.config
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\bin\Debug\Lab6_1.exe
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\bin\Debug\Lab6_1.pdb
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\bin\Debug\AsyncSocketTCP.dll
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\bin\Debug\AsyncSocketTCP.pdb
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\AsyncSocketServer.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\Lab6_1.AsyncSocketServer.resources
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\Lab6_1.Properties.Resources.resources
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\AsyncSocketServer.csproj.GenerateResource.cache
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\AsyncSocketServer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\AsyncSoc.CEF36B2F.Up2Date
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\Lab6_1.exe
+C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketServer\obj\Debug\Lab6_1.pdb
