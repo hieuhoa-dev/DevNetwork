@@ -82,6 +82,7 @@ namespace AsyncSocketTCP
                 await mClient.ConnectAsync(mServerIPAddress, mServerPort);
                 Console.WriteLine(string.Format("Connected to server IP/Port: {0}/ {1}", mServerIPAddress, mServerPort));
                 await ReadDataAsync(mClient);
+                TryResendOfflineMessages();
             }
             catch (Exception excp)
             {
@@ -105,10 +106,14 @@ namespace AsyncSocketTCP
                 {
                     StreamWriter clientStreamWriter = new StreamWriter(mClient.GetStream());
                     clientStreamWriter.AutoFlush = true;
-                    await clientStreamWriter.WriteAsync(strInputUser);
+                    await clientStreamWriter.WriteAsync(strInputUser);  
                     Console.WriteLine("Data sent...");
                 }
-
+                else
+                {
+                    // Lưu tin nhắn offline
+                    offlineMessages.Add(strInputUser);
+                }
             }
 
         }
@@ -118,7 +123,7 @@ namespace AsyncSocketTCP
         {
             try
             {
-                StreamReader clientStreamReader = new StreamReader(mClient.GetStream());
+                StreamReader clientStreamReader = new StreamReader(mClient.GetStream(), Encoding.UTF8);
                 char[] buff = new char[64];
                 int readByteCount = 0;
                 while (true)
@@ -152,6 +157,19 @@ namespace AsyncSocketTCP
                 handler(this, e);
             }
 
+        }
+
+        List<string> offlineMessages = new List<string>();
+
+
+        void TryResendOfflineMessages()
+        {
+
+            foreach (string msg in offlineMessages)
+            {
+                SendToServer(msg);
+            }
+            offlineMessages.Clear(); // Sau khi gửi thành công, xóa tin nhắn đã lưu
         }
 
 

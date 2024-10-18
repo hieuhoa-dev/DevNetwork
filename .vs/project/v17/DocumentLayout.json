@@ -1,12 +1,137 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsockettcp\\asyncsockettcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|solutionrelative:asyncsockettcp\\asyncsockettcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsockettcp\\asyncsockettcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|solutionrelative:asyncsockettcp\\asyncsockettcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E0CC625-EFC9-4DA5-966C-D66348E496DA}|AsyncSocketClient\\AsyncSocketClient.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsocketclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E0CC625-EFC9-4DA5-966C-D66348E496DA}|AsyncSocketClient\\AsyncSocketClient.csproj|solutionrelative:asyncsocketclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A91563C-6932-4B65-B0B4-573D0D30F478}|AsyncSocketServer\\AsyncSocketServer.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsocketserver\\asyncsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A91563C-6932-4B65-B0B4-573D0D30F478}|AsyncSocketServer\\AsyncSocketServer.csproj|solutionrelative:asyncsocketserver\\asyncsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A91563C-6932-4B65-B0B4-573D0D30F478}|AsyncSocketServer\\AsyncSocketServer.csproj|c:\\users\\lenovo\\downloads\\lab6_2\\project\\asyncsocketserver\\asyncsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A91563C-6932-4B65-B0B4-573D0D30F478}|AsyncSocketServer\\AsyncSocketServer.csproj|solutionrelative:asyncsocketserver\\asyncsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AsyncSocketServer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketServer\\AsyncSocketServer.cs",
+              "RelativeDocumentMoniker": "AsyncSocketServer\\AsyncSocketServer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketServer\\AsyncSocketServer.cs [Design]",
+              "RelativeToolTip": "AsyncSocketServer\\AsyncSocketServer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T03:17:27.615Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketClients\\Form1.cs",
+              "RelativeDocumentMoniker": "AsyncSocketClients\\Form1.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketClients\\Form1.cs",
+              "RelativeToolTip": "AsyncSocketClients\\Form1.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T03:16:34.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketClients\\Form1.cs",
+              "RelativeDocumentMoniker": "AsyncSocketClients\\Form1.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketClients\\Form1.cs [Design]",
+              "RelativeToolTip": "AsyncSocketClients\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T03:16:32.771Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AsyncSocketTCPClient.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketTCP\\AsyncSocketTCPClient.cs",
+              "RelativeDocumentMoniker": "AsyncSocketTCP\\AsyncSocketTCPClient.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketTCP\\AsyncSocketTCPClient.cs",
+              "RelativeToolTip": "AsyncSocketTCP\\AsyncSocketTCPClient.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAiwFcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T01:54:52.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsyncSocketTCPServer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketTCP\\AsyncSocketTCPServer.cs",
+              "RelativeDocumentMoniker": "AsyncSocketTCP\\AsyncSocketTCPServer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketTCP\\AsyncSocketTCPServer.cs",
+              "RelativeToolTip": "AsyncSocketTCP\\AsyncSocketTCPServer.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAuwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T02:30:31.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketClient\\Program.cs",
+              "RelativeDocumentMoniker": "AsyncSocketClient\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketClient\\Program.cs",
+              "RelativeToolTip": "AsyncSocketClient\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADgvygAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T02:44:43.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AsyncSocketServer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketServer\\AsyncSocketServer.cs",
+              "RelativeDocumentMoniker": "AsyncSocketServer\\AsyncSocketServer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Lab6_2\\Project\\AsyncSocketServer\\AsyncSocketServer.cs",
+              "RelativeToolTip": "AsyncSocketServer\\AsyncSocketServer.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAiwD8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T03:17:29.194Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

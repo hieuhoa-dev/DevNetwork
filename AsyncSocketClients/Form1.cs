@@ -52,7 +52,7 @@ namespace AsyncSocketClients
             txtMessenge.Text += client.dataReceive+"\n";
         }
         void HandleClientDisConnected(object sender, ClientReceiveEventArgs e)
-        {  
+        {
             txtMessenge.Text += e.ClientRecieve + "\n";
         }
 

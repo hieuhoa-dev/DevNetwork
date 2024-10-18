@@ -11,3 +11,16 @@ C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketClients\obj\Debug\AsyncSocket
 C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketClients\bin\Debug\AsyncSocketTCP.dll
 C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketClients\bin\Debug\AsyncSocketTCP.pdb
 C:\Users\Lenovo\Downloads\Lab6_2\Lab6_2\AsyncSocketClients\obj\Debug\AsyncSoc.0BC4B3FA.Up2Date
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\bin\Debug\AsyncSocketClients.exe.config
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\bin\Debug\AsyncSocketClients.exe
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\bin\Debug\AsyncSocketClients.pdb
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\bin\Debug\AsyncSocketTCP.dll
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\bin\Debug\AsyncSocketTCP.pdb
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.Form1.resources
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.Properties.Resources.resources
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.csproj.GenerateResource.cache
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSoc.0BC4B3FA.Up2Date
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.exe
+C:\Users\Lenovo\Downloads\Lab6_2\Project\AsyncSocketClients\obj\Debug\AsyncSocketClients.pdb

@@ -22,8 +22,6 @@ namespace AsyncSocketTCP
         TcpListener mTCPListener;
         List<TcpClient> mClients;
         //Lấy trạng thái chương trình đang thực thì hay không?
-
-
         public bool KeepRunning { get; set; }
 
         public AsyncSocketTCPServer()
@@ -33,7 +31,6 @@ namespace AsyncSocketTCP
 
         public async void StartListeningForIncomingConnection(IPAddress ipaddr = null, int port = 9001)
         {
-
             if (ipaddr == null)
                 ipaddr = IPAddress.Any;
 
@@ -59,7 +56,6 @@ namespace AsyncSocketTCP
                         mClients.Count, returnedByAccept.Client.RemoteEndPoint)
                          );
                     TakeCareOfTCPClient(returnedByAccept);
-                    //Recieve(returnedByAccept.Client);
                 }
             }
             catch (Exception excp)
@@ -105,7 +101,7 @@ namespace AsyncSocketTCP
                     OnServerReceiveEventEvent(new ServerReceiveEventArgs(receivedText));
                     System.Diagnostics.Debug.WriteLine("*** RECEIVED: + receivedText");
 
-                    Array.Clear(buff, 8, buff.Length);  
+                    Array.Clear(buff, 0, buff.Length);
                 }
             }
             catch (Exception excp)
@@ -113,27 +109,21 @@ namespace AsyncSocketTCP
                 RemoveClient(paramClient);
                 System.Diagnostics.Debug.WriteLine(excp.ToString());
             }
-        }
-        //void Recieve(Socket client)
-        //{
-        //    while (true)
-        //    {  
-        //        byte[] recv = new byte[1024];
-        //        client.Receive(recv);
-        //        string s = Encoding.UTF8.GetString(recv);
-        //        OnServerReceiveEventEvent(new ServerReceiveEventArgs(s));
-        //    }
-        //}
 
+        }
+
+    
         public async void SendToAll(string leMessege)
         {
             if (string.IsNullOrEmpty(leMessege))
                 return;
             try
             {
-                byte[] buffMessage = Encoding.ASCII.GetBytes(leMessege);
+                byte[] buffMessage = Encoding.UTF8.GetBytes(leMessege);
                 foreach (TcpClient c in mClients)
-                    await c.GetStream().WriteAsync(buffMessage, 0, buffMessage.Length);
+                {
+                    await c.GetStream().WriteAsync(buffMessage, 0, buffMessage.Length);                  
+                }
             }
             catch (Exception excp)
             {
