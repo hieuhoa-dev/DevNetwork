@@ -86,6 +86,7 @@ namespace AsyncSocketTCP
             }
             catch (Exception excp)
             {
+                RemoveServer();
                 Console.WriteLine(excp.ToString());
                 throw;
             }
@@ -170,6 +171,17 @@ namespace AsyncSocketTCP
                     SendToServer(msg);
                 }
                 offlineMessages.Clear();
+            }
+        }
+
+        void RemoveServer()
+        {
+            if (mClient != null)
+            {
+                mClient.Close();
+                mClient = null;
+                mServerPort = -1;
+                mServerIPAddress = null;
             }
         }
 
