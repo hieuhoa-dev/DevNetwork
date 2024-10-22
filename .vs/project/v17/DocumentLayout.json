@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsockettcp\\asyncsockettcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|c:\\users\\lenovo\\downloads\\th\u01B0 mu\u0323c m\u01A1\u0301i\\devnetwork\\asyncsockettcp\\asyncsockettcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|solutionrelative:asyncsockettcp\\asyncsockettcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|c:\\users\\lenovo\\downloads\\th\u01B0 mu\u0323c m\u01A1\u0301i\\devnetwork\\asyncsocketclients\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46E83A53-E31C-4079-9AF0-BE7A66E4BB1D}|AsyncSocketTCP\\AsyncSocketTCP.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsockettcp\\asyncsockettcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsocketclients\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A31AE29-CDC1-42FC-A721-05FEE46072B9}|AsyncSocketClients\\AsyncSocketClients.csproj|solutionrelative:asyncsocketclients\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A91563C-6932-4B65-B0B4-573D0D30F478}|AsyncSocketServer\\AsyncSocketServer.csproj|C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\asyncsocketserver\\asyncsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,15 +50,16 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AsyncSocketTCPServer.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketTCP\\AsyncSocketTCPServer.cs",
               "RelativeDocumentMoniker": "AsyncSocketTCP\\AsyncSocketTCPServer.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketTCP\\AsyncSocketTCPServer.cs",
               "RelativeToolTip": "AsyncSocketTCP\\AsyncSocketTCPServer.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAASwF4AAAAkAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAhwF4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T02:30:31.464Z"
+              "WhenOpened": "2024-10-18T02:30:31.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,7 +69,7 @@
               "RelativeDocumentMoniker": "AsyncSocketTCP\\AsyncSocketTCPClient.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketTCP\\AsyncSocketTCPClient.cs",
               "RelativeToolTip": "AsyncSocketTCP\\AsyncSocketTCPClient.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAASwJMAAAAiAAAA",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAawKYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T01:54:52.822Z",
               "EditorCaption": ""
@@ -86,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketClients\\Form1.cs",
               "RelativeDocumentMoniker": "AsyncSocketClients\\Form1.cs",
@@ -98,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketClients\\Form1.cs",
               "RelativeDocumentMoniker": "AsyncSocketClients\\Form1.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketClients\\Form1.cs",
               "RelativeToolTip": "AsyncSocketClients\\Form1.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAowD8AAAApAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwD8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T03:16:34.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\Th\u01B0 mu\u0323c m\u01A1\u0301i\\DevNetwork\\AsyncSocketClients\\Program.cs",
               "RelativeDocumentMoniker": "AsyncSocketClients\\Program.cs",
@@ -119,8 +120,7 @@
               "RelativeToolTip": "AsyncSocketClients\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:04:44.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T09:04:44.227Z"
             },
             {
               "$type": "Document",

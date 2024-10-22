@@ -16,3 +16,9 @@ C:\Users\Lenovo\Downloads\Thư mục mới\DevNetwork\AsyncSocketTCP\obj\Debug\
 C:\Users\Lenovo\Downloads\Thư mục mới\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\Thư mục mới\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.dll
 C:\Users\Lenovo\Downloads\Thư mục mới\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.pdb
+C:\Users\Lenovo\Downloads\DevNetwork\AsyncSocketTCP\bin\Debug\AsyncSocketTCP.dll
+C:\Users\Lenovo\Downloads\DevNetwork\AsyncSocketTCP\bin\Debug\AsyncSocketTCP.pdb
+C:\Users\Lenovo\Downloads\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.dll
+C:\Users\Lenovo\Downloads\DevNetwork\AsyncSocketTCP\obj\Debug\AsyncSocketTCP.pdb

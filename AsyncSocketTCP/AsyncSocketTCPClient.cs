@@ -46,7 +46,6 @@ namespace AsyncSocketTCP
                 return false;
             }
             mServerIPAddress = ipaddr;
-
             return true;
 
         }
