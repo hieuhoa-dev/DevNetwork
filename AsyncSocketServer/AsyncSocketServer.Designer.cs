@@ -43,10 +43,10 @@
             // 
             // btnAcceptIncomingAsync
             // 
-            this.btnAcceptIncomingAsync.Location = new System.Drawing.Point(44, 34);
+            this.btnAcceptIncomingAsync.Location = new System.Drawing.Point(42, 34);
             this.btnAcceptIncomingAsync.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAcceptIncomingAsync.Name = "btnAcceptIncomingAsync";
-            this.btnAcceptIncomingAsync.Size = new System.Drawing.Size(441, 100);
+            this.btnAcceptIncomingAsync.Size = new System.Drawing.Size(441, 56);
             this.btnAcceptIncomingAsync.TabIndex = 0;
             this.btnAcceptIncomingAsync.Text = "Accept Incoming Connection";
             this.btnAcceptIncomingAsync.UseVisualStyleBackColor = true;
@@ -54,10 +54,10 @@
             // 
             // btnStopServer
             // 
-            this.btnStopServer.Location = new System.Drawing.Point(520, 40);
+            this.btnStopServer.Location = new System.Drawing.Point(520, 34);
             this.btnStopServer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnStopServer.Name = "btnStopServer";
-            this.btnStopServer.Size = new System.Drawing.Size(112, 88);
+            this.btnStopServer.Size = new System.Drawing.Size(112, 56);
             this.btnStopServer.TabIndex = 0;
             this.btnStopServer.Text = "Stop Server";
             this.btnStopServer.UseVisualStyleBackColor = true;
@@ -65,10 +65,10 @@
             // 
             // btnSendAll
             // 
-            this.btnSendAll.Location = new System.Drawing.Point(520, 143);
+            this.btnSendAll.Location = new System.Drawing.Point(520, 100);
             this.btnSendAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSendAll.Name = "btnSendAll";
-            this.btnSendAll.Size = new System.Drawing.Size(112, 83);
+            this.btnSendAll.Size = new System.Drawing.Size(112, 70);
             this.btnSendAll.TabIndex = 0;
             this.btnSendAll.Text = "Send All";
             this.btnSendAll.UseVisualStyleBackColor = true;
@@ -76,7 +76,8 @@
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(44, 168);
+            this.txtMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMessage.Location = new System.Drawing.Point(43, 134);
             this.txtMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
@@ -86,7 +87,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 143);
+            this.label1.Location = new System.Drawing.Point(40, 109);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 20);
@@ -96,7 +97,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 228);
+            this.label2.Location = new System.Drawing.Point(49, 184);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
@@ -105,11 +106,13 @@
             // 
             // txtClientInfo
             // 
-            this.txtClientInfo.Location = new System.Drawing.Point(44, 392);
+            this.txtClientInfo.Location = new System.Drawing.Point(44, 407);
             this.txtClientInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtClientInfo.Multiline = true;
             this.txtClientInfo.Name = "txtClientInfo";
-            this.txtClientInfo.Size = new System.Drawing.Size(588, 81);
+            this.txtClientInfo.ReadOnly = true;
+            this.txtClientInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtClientInfo.Size = new System.Drawing.Size(510, 66);
             this.txtClientInfo.TabIndex = 1;
             // 
             // label3
@@ -124,18 +127,19 @@
             // 
             // txtClients
             // 
-            this.txtClients.Location = new System.Drawing.Point(520, 278);
+            this.txtClients.Location = new System.Drawing.Point(562, 407);
             this.txtClients.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtClients.Multiline = true;
             this.txtClients.Name = "txtClients";
-            this.txtClients.Size = new System.Drawing.Size(112, 52);
+            this.txtClients.ReadOnly = true;
+            this.txtClients.Size = new System.Drawing.Size(70, 66);
             this.txtClients.TabIndex = 1;
             this.txtClients.Text = "0";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(516, 252);
+            this.label4.Location = new System.Drawing.Point(551, 368);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
@@ -145,9 +149,9 @@
             // lvMessenge
             // 
             this.lvMessenge.HideSelection = false;
-            this.lvMessenge.Location = new System.Drawing.Point(43, 251);
+            this.lvMessenge.Location = new System.Drawing.Point(42, 216);
             this.lvMessenge.Name = "lvMessenge";
-            this.lvMessenge.Size = new System.Drawing.Size(466, 78);
+            this.lvMessenge.Size = new System.Drawing.Size(590, 131);
             this.lvMessenge.TabIndex = 3;
             this.lvMessenge.UseCompatibleStateImageBehavior = false;
             this.lvMessenge.View = System.Windows.Forms.View.List;

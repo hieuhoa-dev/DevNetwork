@@ -105,15 +105,16 @@
             // 
             this.txtInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput.Location = new System.Drawing.Point(134, 406);
+            this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(582, 26);
+            this.txtInput.Size = new System.Drawing.Size(622, 58);
             this.txtInput.TabIndex = 0;
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(762, 400);
+            this.btnSend.Location = new System.Drawing.Point(762, 406);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(108, 36);
+            this.btnSend.Size = new System.Drawing.Size(108, 58);
             this.btnSend.TabIndex = 2;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
