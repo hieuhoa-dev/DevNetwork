@@ -29,6 +29,7 @@ namespace AsyncSocketTCP
             mClients = new List<TcpClient>();
         }
 
+        //Kết nối tới CLient
         public async void StartListeningForIncomingConnection(IPAddress ipaddr = null, int port = 9001)
         {
             if (ipaddr == null)
@@ -75,7 +76,7 @@ namespace AsyncSocketTCP
             }
         }
 
-
+        //Nhận tin nhắn từ Client
         private async void TakeCareOfTCPClient(TcpClient paramClient)
         {
             NetworkStream stream = null;
@@ -101,6 +102,8 @@ namespace AsyncSocketTCP
                     OnServerReceiveEventEvent(new ServerReceiveEventArgs(receivedText));
                     System.Diagnostics.Debug.WriteLine("*** RECEIVED: + receivedText");
 
+                    // Chuyển tiếp tin nhắn
+                    await ForwardMessageToOtherClients(paramClient, receivedText);
                     Array.Clear(buff, 0, buff.Length);
                 }
             }
@@ -112,7 +115,6 @@ namespace AsyncSocketTCP
 
         }
 
-    
         public async void SendToAll(string leMessege)
         {
             if (string.IsNullOrEmpty(leMessege))
@@ -188,8 +190,19 @@ namespace AsyncSocketTCP
             }
 
         }
-
-
+        //Hàm chuyển tin nhắn
+        private async Task ForwardMessageToOtherClients(TcpClient senderClient, string message)
+        {
+            foreach (var client in mClients)
+            {
+                if (client != senderClient && client.Connected)
+                {
+                    NetworkStream stream = client.GetStream();
+                    byte[] data = Encoding.UTF8.GetBytes(message);
+                    await stream.WriteAsync(data, 0, data.Length);
+                }
+            }
+        }
 
 
     }

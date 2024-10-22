@@ -94,7 +94,7 @@ namespace AsyncSocketTCP
 
         }
 
-
+        //Gửi tin đến Server
         public async Task SendToServer(string strInputUser)
         {
             if (string.IsNullOrEmpty(strInputUser))
@@ -121,6 +121,8 @@ namespace AsyncSocketTCP
         }
         public string dataReceive;
 
+
+        //Nhận tin nhắn từ Server
         private async Task ReadDataAsync(TcpClient mClient)
         {
             try
@@ -162,6 +164,7 @@ namespace AsyncSocketTCP
 
         }
 
+        //Danh sách tin nhắn offline khi không chuyển được
         List<string> offlineMessages = new List<string>();
 
         public async Task TryResendOfflineMessages()
