@@ -21,7 +21,7 @@ namespace AsyncSocketClients
         public Form1()
         {
             InitializeComponent();
-            client.ClientReceiveEvent += HandleClientDisConnected;
+            client.ClientReceiveEvent += HandleClientReceive;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace AsyncSocketClients
         {
             txtMessenge.Text += client.dataReceive+"\n";
         }
-        void HandleClientDisConnected(object sender, ClientReceiveEventArgs e)
+        void HandleClientReceive(object sender, ClientReceiveEventArgs e)
         {
             txtMessenge.Text += e.ClientRecieve + "\n";
         }

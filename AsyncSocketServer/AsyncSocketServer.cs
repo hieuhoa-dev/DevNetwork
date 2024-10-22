@@ -61,7 +61,7 @@ namespace Lab6_1
         }
         void HandleServerReceive(object sender, ServerReceiveEventArgs e)
         {
-            txtMessenge.Text += e.ServerRecieve;
+            txtMessenge.Text += e.ServerRecieve +"\n\r";
         }
 
     }

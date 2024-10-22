@@ -81,8 +81,8 @@ namespace AsyncSocketTCP
             {
                 await mClient.ConnectAsync(mServerIPAddress, mServerPort);
                 Console.WriteLine(string.Format("Connected to server IP/Port: {0}/ {1}", mServerIPAddress, mServerPort));
+                Task.Factory.StartNew(async () => await TryResendOfflineMessages(), TaskCreationOptions.LongRunning);
                 await ReadDataAsync(mClient);
-                TryResendOfflineMessages();
             }
             catch (Exception excp)
             {
@@ -161,18 +161,17 @@ namespace AsyncSocketTCP
 
         List<string> offlineMessages = new List<string>();
 
-
-        void TryResendOfflineMessages()
+        public async Task TryResendOfflineMessages()
         {
-
-            foreach (string msg in offlineMessages)
+            while (offlineMessages.Count > 0)
             {
-                SendToServer(msg);
+                foreach (string msg in offlineMessages)
+                {
+                    SendToServer(msg);
+                }
+                offlineMessages.Clear();
             }
-            offlineMessages.Clear(); // Sau khi gửi thành công, xóa tin nhắn đã lưu
         }
-
-
 
     }
 }
