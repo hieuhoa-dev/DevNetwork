@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AsyncSocketTCP;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static AsyncSocketTCP.CustomEventArgs;
 
 
@@ -20,15 +21,16 @@ namespace AsyncSocketClients
      
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();       
+            
             client.ClientReceiveEvent += HandleClientReceive;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            string strIPAddress = txtAddress.Text;
-            string strPortInput = txtPort.Text;
-            if (strIPAddress == "" || txtPort.Text == "")
+            string strIPAddress = txtAddress.Text.Trim();
+            string strPortInput = txtPort.Text.Trim();
+            if (strIPAddress == "" || strPortInput == "")
             {
                 strIPAddress = txtAddress.Text = "127.0.0.1";
                 strPortInput = txtPort.Text = "9001";
@@ -46,11 +48,21 @@ namespace AsyncSocketClients
         void HandleClientReceive(object sender, ClientReceiveEventArgs e)
         {
             //txtMessenge.Text += e.ClientRecieve + "\n";
-            lvMessenge.Items.Add(e.ClientRecieve);
+            //lvMessenge.Items.Add(e.ClientRecieve);
+            ListViewItem lvitem = new ListViewItem("Server");
+            lvitem.SubItems.Add(DateTime.Now.ToString());
+            lvitem.SubItems.Add(e.ClientRecieve);
+            lvMessenge.Items.Add(lvitem);
+            
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            ListViewItem lvitem = new ListViewItem("Client");
+            lvitem.SubItems.Add(DateTime.Now.ToString());
+            lvitem.SubItems.Add(txtInput.Text);
+            lvMessenge.Items.Add(lvitem);
+
             client.SendToServer(txtInput.Text);
         }
     }

@@ -46,6 +46,7 @@ namespace AsyncSocketTCP
                 return false;
             }
             mServerIPAddress = ipaddr;
+
             return true;
 
         }
@@ -75,13 +76,15 @@ namespace AsyncSocketTCP
 
         public async Task ConnectToServer()
         {
-            if (mClient == null)
+            if (mClient == null || !mClient.Connected)
                 mClient = new TcpClient();
             try
             {
                 await mClient.ConnectAsync(mServerIPAddress, mServerPort);
+
                 Console.WriteLine(string.Format("Connected to server IP/Port: {0}/ {1}", mServerIPAddress, mServerPort));
-                Task.Factory.StartNew(async () => await TryResendOfflineMessages(), TaskCreationOptions.LongRunning);
+                //Task.Factory.StartNew(async () => await TryResendOfflineMessages(), TaskCreationOptions.LongRunning);
+                await TryResendOfflineMessages();
                 await ReadDataAsync(mClient);
             }
             catch (Exception excp)
@@ -106,7 +109,7 @@ namespace AsyncSocketTCP
                 {
                     StreamWriter clientStreamWriter = new StreamWriter(mClient.GetStream());
                     clientStreamWriter.AutoFlush = true;
-                    await clientStreamWriter.WriteAsync(strInputUser);  
+                    await clientStreamWriter.WriteAsync(strInputUser);
                     Console.WriteLine("Data sent...");
                 }
                 else
@@ -142,6 +145,7 @@ namespace AsyncSocketTCP
             }
             catch (Exception excp)
             {
+                CloseAndDisconnect();
                 Console.WriteLine(excp.ToString());
                 throw;
             }
@@ -171,6 +175,15 @@ namespace AsyncSocketTCP
                 }
                 offlineMessages.Clear();
             }
+        }
+
+        public bool CheckServerConnect()
+        {
+            if (mClient.Connected)
+            {
+                return true;
+            }
+            return false;
         }
 
     }

@@ -39,14 +39,17 @@
             this.txtClients = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lvMessenge = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnAcceptIncomingAsync
             // 
-            this.btnAcceptIncomingAsync.Location = new System.Drawing.Point(42, 34);
+            this.btnAcceptIncomingAsync.Location = new System.Drawing.Point(41, 14);
             this.btnAcceptIncomingAsync.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAcceptIncomingAsync.Name = "btnAcceptIncomingAsync";
-            this.btnAcceptIncomingAsync.Size = new System.Drawing.Size(441, 56);
+            this.btnAcceptIncomingAsync.Size = new System.Drawing.Size(441, 41);
             this.btnAcceptIncomingAsync.TabIndex = 0;
             this.btnAcceptIncomingAsync.Text = "Accept Incoming Connection";
             this.btnAcceptIncomingAsync.UseVisualStyleBackColor = true;
@@ -54,10 +57,10 @@
             // 
             // btnStopServer
             // 
-            this.btnStopServer.Location = new System.Drawing.Point(520, 34);
+            this.btnStopServer.Location = new System.Drawing.Point(520, 14);
             this.btnStopServer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnStopServer.Name = "btnStopServer";
-            this.btnStopServer.Size = new System.Drawing.Size(112, 56);
+            this.btnStopServer.Size = new System.Drawing.Size(119, 41);
             this.btnStopServer.TabIndex = 0;
             this.btnStopServer.Text = "Stop Server";
             this.btnStopServer.UseVisualStyleBackColor = true;
@@ -65,10 +68,10 @@
             // 
             // btnSendAll
             // 
-            this.btnSendAll.Location = new System.Drawing.Point(520, 100);
+            this.btnSendAll.Location = new System.Drawing.Point(520, 60);
             this.btnSendAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSendAll.Name = "btnSendAll";
-            this.btnSendAll.Size = new System.Drawing.Size(112, 70);
+            this.btnSendAll.Size = new System.Drawing.Size(119, 64);
             this.btnSendAll.TabIndex = 0;
             this.btnSendAll.Text = "Send All";
             this.btnSendAll.UseVisualStyleBackColor = true;
@@ -77,7 +80,7 @@
             // txtMessage
             // 
             this.txtMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMessage.Location = new System.Drawing.Point(43, 134);
+            this.txtMessage.Location = new System.Drawing.Point(41, 88);
             this.txtMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
@@ -87,7 +90,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 109);
+            this.label1.Location = new System.Drawing.Point(37, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 20);
@@ -97,7 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 184);
+            this.label2.Location = new System.Drawing.Point(37, 138);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
@@ -132,14 +135,14 @@
             this.txtClients.Multiline = true;
             this.txtClients.Name = "txtClients";
             this.txtClients.ReadOnly = true;
-            this.txtClients.Size = new System.Drawing.Size(70, 66);
+            this.txtClients.Size = new System.Drawing.Size(77, 66);
             this.txtClients.TabIndex = 1;
             this.txtClients.Text = "0";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(551, 368);
+            this.label4.Location = new System.Drawing.Point(558, 368);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
@@ -148,13 +151,34 @@
             // 
             // lvMessenge
             // 
+            this.lvMessenge.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvMessenge.FullRowSelect = true;
             this.lvMessenge.HideSelection = false;
-            this.lvMessenge.Location = new System.Drawing.Point(42, 216);
+            this.lvMessenge.Location = new System.Drawing.Point(30, 161);
             this.lvMessenge.Name = "lvMessenge";
-            this.lvMessenge.Size = new System.Drawing.Size(590, 131);
+            this.lvMessenge.RightToLeftLayout = true;
+            this.lvMessenge.Size = new System.Drawing.Size(609, 204);
             this.lvMessenge.TabIndex = 3;
             this.lvMessenge.UseCompatibleStateImageBehavior = false;
-            this.lvMessenge.View = System.Windows.Forms.View.List;
+            this.lvMessenge.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "To";
+            this.columnHeader1.Width = 45;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Date Time";
+            this.columnHeader2.Width = 134;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Messenge";
+            this.columnHeader3.Width = 197;
             // 
             // AsyncSocketServer
             // 
@@ -194,6 +218,9 @@
         private System.Windows.Forms.TextBox txtClients;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListView lvMessenge;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }
 

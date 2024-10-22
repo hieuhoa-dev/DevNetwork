@@ -18,6 +18,7 @@ namespace Lab6_1
         public AsyncSocketServer()
         {
             InitializeComponent();
+
             mServer = new AsyncSocketTCPServer();
             mServer.ClientConnectedEvent += HandleClientConnected;
             mServer.ClientDisConnectedEvent += HandleClientDisConnected;
@@ -34,7 +35,11 @@ namespace Lab6_1
 
         public void btnSendAll_Click(object sender, EventArgs e)
         {
-  
+            ListViewItem lvitem = new ListViewItem("Server");
+            lvitem.SubItems.Add(DateTime.Now.ToString());
+            lvitem.SubItems.Add(txtMessage.Text);
+            lvMessenge.Items.Add(lvitem);
+
             mServer.SendToAll(txtMessage.Text.Trim());
           
         }
@@ -63,7 +68,14 @@ namespace Lab6_1
         void HandleServerReceive(object sender, ServerReceiveEventArgs e)
         {
             //txtMessenge.Text += e.ServerRecieve +"\n\r";
-            lvMessenge.Items.Add(e.ServerRecieve);
+            //lvMessenge.Items.Add(e.ServerRecieve);
+
+            ListViewItem lvitem = new ListViewItem("Client");
+            lvitem.SubItems.Add(DateTime.Now.ToString());
+            lvitem.SubItems.Add(e.ServerRecieve);
+            lvMessenge.Items.Add(lvitem);
+
+
         }
 
     }
