@@ -35,25 +35,18 @@ namespace AsyncSocketClients
             }
             if (!client.SetServerIPAddress(strIPAddress) || !client.SetPortNumber(strPortInput))
             {
-                txtMessenge.Text = string.Format("IP Address or port number invalid- {0} {1} Press a key to exit", client.ServerIPAddress, client.ServerPort);
+                //txtMessenge.Text = string.Format("IP Address or port number invalid- {0} {1} Press a key to exit", client.ServerIPAddress, client.ServerPort);
                 return;
             }
             client.ConnectToServer();
         }
 
 
-        //void HandleClientRecive(object sender, ClientConnectedEventArgs e)
-        //{
-        //    txtMessenge.AppendText(string.Format("{0} New client connected {1}\r\n", DateTime.Now, e.NewClient));
-        //}
 
-        private void OnHandleClientRecive(object sender, EventArgs e)
-        {
-            txtMessenge.Text += client.dataReceive+"\n";
-        }
         void HandleClientReceive(object sender, ClientReceiveEventArgs e)
         {
-            txtMessenge.Text += e.ClientRecieve + "\n";
+            //txtMessenge.Text += e.ClientRecieve + "\n";
+            lvMessenge.Items.Add(e.ClientRecieve);
         }
 
         private void btnSend_Click(object sender, EventArgs e)

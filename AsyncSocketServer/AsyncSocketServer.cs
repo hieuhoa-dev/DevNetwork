@@ -42,6 +42,7 @@ namespace Lab6_1
         private void btnStopServer_Click(object sender, EventArgs e)
         {
             mServer.StopServer();
+            txtClients.Text = "0";
         }
 
         private void Forml_FormClosing(object sender, FormClosingEventArgs e)
@@ -61,7 +62,8 @@ namespace Lab6_1
         }
         void HandleServerReceive(object sender, ServerReceiveEventArgs e)
         {
-            txtMessenge.Text += e.ServerRecieve +"\n\r";
+            //txtMessenge.Text += e.ServerRecieve +"\n\r";
+            lvMessenge.Items.Add(e.ServerRecieve);
         }
 
     }

@@ -33,11 +33,11 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMessenge = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
+            this.lvMessenge = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // txtAddress
@@ -84,15 +84,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Port";
             // 
-            // txtMessenge
-            // 
-            this.txtMessenge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMessenge.Location = new System.Drawing.Point(134, 92);
-            this.txtMessenge.Multiline = true;
-            this.txtMessenge.Name = "txtMessenge";
-            this.txtMessenge.Size = new System.Drawing.Size(582, 278);
-            this.txtMessenge.TabIndex = 0;
-            // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(12, 182);
@@ -128,11 +119,22 @@
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // lvMessenge
+            // 
+            this.lvMessenge.HideSelection = false;
+            this.lvMessenge.Location = new System.Drawing.Point(134, 78);
+            this.lvMessenge.Name = "lvMessenge";
+            this.lvMessenge.Size = new System.Drawing.Size(736, 316);
+            this.lvMessenge.TabIndex = 3;
+            this.lvMessenge.UseCompatibleStateImageBehavior = false;
+            this.lvMessenge.View = System.Windows.Forms.View.List;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 489);
+            this.Controls.Add(this.lvMessenge);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.label2);
@@ -140,7 +142,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtMessenge);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.txtAddress);
             this.Name = "Form1";
@@ -157,11 +158,11 @@
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMessenge;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.ListView lvMessenge;
     }
 }
 
