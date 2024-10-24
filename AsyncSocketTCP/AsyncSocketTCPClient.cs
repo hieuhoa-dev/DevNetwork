@@ -70,7 +70,7 @@ namespace AsyncSocketTCP
         {
             if (mClient != null)
                 if (mClient.Connected)
-                    mClient.Close();
+                    mClient.Close(); 
         }
 
         public async Task ConnectToServer()
@@ -135,8 +135,8 @@ namespace AsyncSocketTCP
                     readByteCount = await clientStreamReader.ReadAsync(buff, 0, buff.Length);
                     if (readByteCount <= 0)
                     {
-                        Console.WriteLine("Disconnected from server.");
-                        mClient.Close();
+                        //Console.WriteLine("Disconnected from server.");
+                        //mClient.Close();
                         break;
                     }
                     dataReceive = string.Format("Received bytes: {0} Message: {1}", readByteCount, new string(buff));

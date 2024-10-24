@@ -41,6 +41,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtAddress
@@ -110,12 +111,12 @@
             this.txtInput.Location = new System.Drawing.Point(134, 406);
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(622, 58);
+            this.txtInput.Size = new System.Drawing.Size(519, 58);
             this.txtInput.TabIndex = 0;
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(762, 406);
+            this.btnSend.Location = new System.Drawing.Point(659, 406);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(108, 58);
             this.btnSend.TabIndex = 2;
@@ -130,6 +131,7 @@
             this.columnHeader2,
             this.columnHeader3});
             this.lvMessenge.FullRowSelect = true;
+            this.lvMessenge.HideSelection = false;
             this.lvMessenge.Location = new System.Drawing.Point(134, 94);
             this.lvMessenge.Name = "lvMessenge";
             this.lvMessenge.Size = new System.Drawing.Size(736, 294);
@@ -152,12 +154,23 @@
             this.columnHeader3.Text = "Messenge";
             this.columnHeader3.Width = 453;
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(773, 406);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(97, 58);
+            this.btnClear.TabIndex = 2;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 489);
             this.Controls.Add(this.lvMessenge);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.label2);
@@ -189,6 +202,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

@@ -73,6 +73,7 @@ namespace AsyncSocketTCP
                 mClients.Remove(paramClient);
                 OnClientDisConnectedEvent(new ClientDisConnectedEventArgs(paramClient.Client.RemoteEndPoint.ToString()));
                 Debug.WriteLine(String.Format("Client removed, count: {0}", mClients.Count));
+               
             }
         }
 

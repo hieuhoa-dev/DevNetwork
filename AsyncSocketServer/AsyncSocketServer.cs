@@ -35,6 +35,10 @@ namespace Lab6_1
 
         public void btnSendAll_Click(object sender, EventArgs e)
         {
+            if (txtMessage.Text == "")
+            {
+                return;
+            }
             ListViewItem lvitem = new ListViewItem("Server");
             lvitem.SubItems.Add(DateTime.Now.ToString());
             lvitem.SubItems.Add(txtMessage.Text);
@@ -70,13 +74,15 @@ namespace Lab6_1
             //txtMessenge.Text += e.ServerRecieve +"\n\r";
             //lvMessenge.Items.Add(e.ServerRecieve);
 
+            if (txtMessage.Text == "")
+            {
+                return;
+            }
             ListViewItem lvitem = new ListViewItem("Client");
             lvitem.SubItems.Add(DateTime.Now.ToString());
             lvitem.SubItems.Add(e.ServerRecieve);
             lvMessenge.Items.Add(lvitem);
 
-
         }
-
     }
 }

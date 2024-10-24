@@ -41,6 +41,7 @@ namespace AsyncSocketClients
                 return;
             }
             client.ConnectToServer();
+
         }
 
 
@@ -49,6 +50,10 @@ namespace AsyncSocketClients
         {
             //txtMessenge.Text += e.ClientRecieve + "\n";
             //lvMessenge.Items.Add(e.ClientRecieve);
+            if (txtInput.Text == "")
+            {
+                return;
+            }
             ListViewItem lvitem = new ListViewItem("Server");
             lvitem.SubItems.Add(DateTime.Now.ToString());
             lvitem.SubItems.Add(e.ClientRecieve);
@@ -58,12 +63,21 @@ namespace AsyncSocketClients
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            if (txtInput.Text == "")
+            {
+                return;
+            }
             ListViewItem lvitem = new ListViewItem("Client");
             lvitem.SubItems.Add(DateTime.Now.ToString());
             lvitem.SubItems.Add(txtInput.Text);
             lvMessenge.Items.Add(lvitem);
 
             client.SendToServer(txtInput.Text);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lvMessenge.Items.Clear();
         }
     }
 }
